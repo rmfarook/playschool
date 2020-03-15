@@ -2,6 +2,12 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
 <style>
 body, html {
   height: 100%;
@@ -16,7 +22,7 @@ body, html {
   /* The image used */
   background-image: url("img_nature.jpg");
 
-  min-height: 380px;
+  min-height: 680px;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -30,23 +36,28 @@ body, html {
   position: absolute;
   left: 0;
   margin: 20px;
-  max-width: 300px;
+  max-width: 500px;
   padding: 16px;
   background-color: white;
 }
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
   border: none;
-  background: #f1f1f1;
+  border-bottom: 2px solid red;
 }
 
 input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
 }
 
 /* Set a style for the submit button */
@@ -64,25 +75,38 @@ input[type=text]:focus, input[type=password]:focus {
   opacity: 1;
 }
 </style>
+
+
+    
 </head>
 <body>
 
-<h2>Form on Hero Image</h2>
-<div class="bg-img">
-  <form action="/action_page.php" class="container">
-    <h1>Login</h1>
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit" class="btn">Login</button>
-  </form>
-</div>
-
-<p>This examples creates a form on a responsive image. Try this to resize the browser window to see how it always will cover the whole width of the screen, and that it scales nicely on all screen sizes.</p>
+    <div class="container-fluid bg-img">
+       
+        <div class="row">
+          <div class="col-lg-12" >
+         
+                <form action="/action_page.php" class="container">
+                    <img src="img/logo_sm.png" alt="logo_sm">
+                  <h3>Welcome to</h3>
+                  <h1 style="color:orange;">Kiddies Play school</h1>
+              <br>
+                  <label for="email"><b>UserName</b></label>
+                  <input type="text" placeholder="UserName" name="email" required>
+              <br><br>
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Password" name="psw" required>
+              
+                  <button type="submit" class="btn">Login</button>
+                </form>
+             
+              
+          </div>
+         
+        </div>
+      </div>
+      
 
 </body>
 </html>
