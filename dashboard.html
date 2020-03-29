@@ -7,11 +7,31 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+  <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light/all.min.css" />
+<script type="text/javascript" src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
+    }
+
+    .panel-group .monthly {
+      color: orange;
+      font-weight: bold;
+    }
+    .panel-group .quarterly {
+      color: brown;
+      font-weight: bold;
+    }
+    .panel-group .Half-yearly {
+      color: blue;
+      font-weight: bold;
+    }
+    .panel-group .Yearly {
+      color: green;
+      font-weight: bold;
     }
     
     /* Add a gray background color and some padding to the footer */
@@ -19,33 +39,64 @@
       background-color: #f2f2f2;
       padding: 25px;
     }
+
+/* Vertical Scroll Bar */
+    .my-custom-scrollbar {
+position: relative;
+height: 495px;
+overflow: auto;
+}
+.table-wrapper-scroll-y {
+display: block;
+}
   </style>
+  <script type="text/javascript">
+    jQuery(function ($) {
+        var data1 = [60,40];
+       
+            
+        $("#chart1").shieldChart({
+            exportOptions: {
+                image: false,
+                print: false
+            },
+            axisY: {
+                title: {
+                    text: ""
+                }
+            },
+            dataSeries: [{
+                seriesType: "bar",
+                data: data1
+            }]
+        });
+
+        
+    });
+</script>
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Portfolio</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
+  <nav class="navbar navbar-inverse" style="background-color: white;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"><img src="img/logo_sm.jpg" height="50" width="50" alt="logo_sm" style="margin: -14px;"></a>
+      </div>
+      <ul class="nav navbar-nav" style="float: right;">
+        <li class="" style="font-weight: bold;color: black; border-bottom:4px solid orange;"><a href="#">Home</a></li>
+        <li><a href="#">Admission</a></li>
+        <li><a href="#">Departments</a></li>
+        <li><a href="#">Payments</a></li>
+        <li><a href="#">Staff</a></li>
+        <li><a href="#">Students</a></li>
+        <li><a href="#">Reports</a></li>
+        <li style="background-color: orange;"><a href="#"><span class="glyphicon glyphicon-user" style="color: white;"></span> </a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+      <!--<ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+         </ul> -->
     </div>
-  </div>
-</nav>
+  </nav>
 
 <div class="jumbotron">
     <div class="container-fluid bg-3 text-center">    
@@ -61,7 +112,7 @@
                           Income
                         </div>
                         <div style="float: right;">
-                            <span class="glyphicon glyphicon-stats" style="font-size: 50px;"></span>
+                            <span class="glyphicon glyphicon-briefcase" style="font-size: 50px;color: orange;"></span>
                           </div>
                     
                     </div>
@@ -78,7 +129,8 @@
                             Students
                           </div>
                           <div style="float: right;">
-                              <span class="glyphicon glyphicon-user" style="font-size: 50px;"></span>
+                              <span class="glyphicon glyphicon-user" style="font-size: 50px;color: orange;"></span>
+                              <span class="glyphicon glyphicon-user" style="font-size: 50px;color: orange;"></span>
                             </div>
                       
                       </div>
@@ -96,7 +148,7 @@
                             Total Staffs
                           </div>
                           <div style="float: right;">
-                              <span class="glyphicon glyphicon-education" style="font-size: 50px;"></span>
+                              <span class="glyphicon glyphicon-education" style="font-size: 50px;color: orange;"></span>
                             </div>
                       
                       </div>
@@ -115,7 +167,7 @@
                             Reports
                           </div>
                           <div style="float: right;">
-                              <span class="glyphicon glyphicon-list" style="font-size: 50px;"></span>
+                              <span class="glyphicon glyphicon-edit" style="font-size: 50px;color: orange;"></span>
                             </div>
                       
                       </div>
@@ -137,15 +189,31 @@
                 <div class="panel panel-default">
                   <div class="panel-body">
                     <ul class="nav nav-tabs">
-                        <li class="active" style="font-weight: bold; background-color: orange;"><a data-toggle="tab" href="#home">PLAYSCHOOL</a></li>
-                        <li><a data-toggle="tab" href="#menu1">TUTION DETAILS</a></li>
+                        <li class="active" style="font-weight: bold; background-color: cornsilk;"><a data-toggle="tab" href="#home">PLAYSCHOOL</a></li>
+                        <li><a data-toggle="tab" href="#menu11">TUTION DETAILS</a></li>
                         
                       </ul>
                       
                       <div class="tab-content">
                         <div id="home" class="tab-pane fade in active">
-                          <h3>HOME</h3>
-                          <p>Some content.</p>
+                          <form style="padding-top: 20px;">
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio" checked>All
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio">Monthly
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio">Quarterly
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio">Half-Yearly
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio">Yearly
+                            </label>
+                          </form>
+                          <div id="chart1" style="padding-top: 30px;"></div>
                         </div>
                         <div id="menu1" class="tab-pane fade">
                           <h3>Menu 1</h3>
@@ -160,9 +228,109 @@
           </div>
           <div class="col-sm-6" > 
             <div class="panel-group">
-                <div class="panel panel-default">
-                  <div class="panel-body">Panel Content</div>
-                </div>
+              <div class="panel panel-default table-wrapper-scroll-y my-custom-scrollbar" >
+                <div class="col-sm-9 panel-body" style="background-color:orange; font-weight:bold">UNPAIDED LIST</div>
+                <div class="col-sm-3 panel-body" style="background-color:orange; font-weight:bold"><a href="#" style="text-decoration:underline;">Download</a></div>
+                <table class="table table-bordered table-striped mb-0">
+                  <tbody>
+               <tr class="active" style="font-weight: bolder;">
+                    <td>SI NO</td>
+                    <td>AD. NO</td>
+                    <td>STUDENT NAME</td>
+                    <td>STANDARD</td>
+                    <td>TERM</td>
+                  </tr> 
+                  <tr>
+                    <td>1</td>
+                    <td>1601</td>
+                    <td>N.Akshara</td>
+                     <td>Pre.KG</td>
+                    <td><span class="monthly">Monthly</span></td>
+                  </tr> 
+                  <tr>
+                    <td>2</td>
+                    <td>1605</td>
+                    <td>MohanBabu Mani</td>
+                     <td>LKG</td>
+                    <td><span class="quarterly">Quarterly</span></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>1607</td>
+                    <td>A.Chandran</td>
+                     <td>1 Std</td>
+                    <td><span class="Yearly">Yearly</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>4</td>
+                    <td>1767</td>
+                    <td>Akilan</td>
+                     <td>Pre.KG</td>
+                     <td><span class="monthly">Monthly</span></td>
+                  </tr> 
+                  <tr>
+                    <td>5</td>
+                    <td>1799</td>
+                    <td>RMF</td>
+                     <td>II STD</td>
+                     <td><span class="quarterly">Quarterly</span></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>1865</td>
+                    <td>A.Chandran</td>
+                     <td>1 Std</td>
+                     <td><span class="Yearly">Yearly</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>7</td>
+                    <td>1890</td>
+                    <td>Raj</td>
+                     <td>Pre.KG</td>
+                     <td><span class="Half-yearly">Half-yearly</span></td>
+                  </tr> 
+                  <tr>
+                    <td>8</td>
+                    <td>1921</td>
+                    <td>KGF</td>
+                     <td>I STD</td>
+                     <td><span class="quarterly">Quarterly</span></td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>1938</td>
+                    <td>John</td>
+                     <td>1 Std</td>
+                     <td><span class="Yearly">Yearly</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>10</td>
+                    <td>1954</td>
+                    <td>Kumar</td>
+                     <td>Pre.KG</td>
+                     <td><span class="monthly">Monthly</span></td>
+                  </tr> 
+                  <tr>
+                    <td>11</td>
+                    <td>1971</td>
+                    <td>Ajay</td>
+                     <td>I STD</td>
+                     <td><span class="Half-yearly">Half-yearly</span></td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>1998</td>
+                    <td>Tom</td>
+                     <td>1 Std</td>
+                     <td><span class="Yearly">Yearly</span></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+              </div>
                
               </div>
           </div>
@@ -170,13 +338,36 @@
           
         </div>
       </div>
+      <!--<div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3>Bar Series</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="chart1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3>Multiple Bar Series</h3>
+                    </div>
+                    <div id="chart2" class="panel-body">
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>-->
 </div>
   
 
 
 
 <footer class="container-fluid text-center">
-  <p>Footer Text</p>
+  <p></p>
 </footer>
 
 </body>
