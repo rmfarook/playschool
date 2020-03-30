@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registration Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+ 
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      
+    }
+
+    
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+
+  </style>
+  
+
+
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse" style="background-color: white;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"><img src="img/logo_sm.jpg" height="50" width="50" alt="logo_sm" style="margin: -14px;"></a>
+      </div>
+      <ul class="nav navbar-nav" style="float: right;">
+        <li><a href="home.html">Home</a></li>
+        <li class="" style="font-weight: bold;color: black; border-bottom:4px solid orange;"><a href="registration.html">Admission</a></li>
+        <li><a href="#">Departments</a></li>
+        <li><a href="#">Payments</a></li>
+        <li><a href="#">Staff</a></li>
+        <li><a href="#">Students</a></li>
+        <li><a href="#">Reports</a></li>
+        <li style="background-color: orange;"><a href="#"><span class="glyphicon glyphicon-user" style="color: white;"></span> </a></li>
+      </ul>
+      <!--<ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+         </ul> -->
+    </div>
+  </nav>
+
+<div class="jumbotron">
+     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                      <div class="col-md-1"><span style="font-weight: bold;">ADMISSION</span></div>
+                      <div class="dropdown col-md-11">
+                         <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Play School Admission
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Play School</a></li>
+                          <li><a href="#">Pre-KG</a></li>
+                          <li><a href="#">LKG</a></li>
+                          <li><a href="#">UKG</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div id="divider"><hr></div>
+                    <div class="panel-body">
+                        
+                        <div class="col-md-9">
+                          <form>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail4">Application No.</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputPassword4">Admission No.</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                              </div>
+                            </div>
+
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail4">Name of the Student</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputPassword4">DOB</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                              </div>
+                            </div>
+
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail4">Father's Name</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputPassword4">Occupation</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                              </div>
+                            </div>
+
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail4">Contact No.</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputPassword4">Email Id</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                              </div>
+                            </div>
+
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail4">Mother's Name </label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputPassword4">Occupation</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                              </div>
+                            </div>
+
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail4">Contact No.</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputPassword4">Email Id</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                              </div>
+                            </div>
+
+                            <div class="form-group col-md-12">
+                              <label for="inputAddress">Address</label>
+                              <textarea class="form-control" id="inputAddress" rows="4" placeholder="1234 Main St"></textarea>
+                            </div>
+                            <div class="form-group col-md-12">
+                              Applying for the Standard &nbsp;&nbsp;
+                              <label class="radio-inline">
+                                <input type="radio" name="optradio">Play Group
+                              </label>
+                              <label class="radio-inline">
+                                <input type="radio" name="optradio">Pre-KG
+                              </label>
+                            </div>
+
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail4">Mode of Transport</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputPassword4">Escorts Name</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                              </div>
+                            </div>
+
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail4">Any Allergy</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputPassword4">Family Doctor's Name & No.</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                              </div>
+                            </div>
+
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail4">Expected School for KG</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                              </div>
+                              <form>
+                                <div class="form-group">
+                                  <label for="exampleFormControlFile1">Upload Photo</label>
+                                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                </div>
+                              </form>
+                              <br>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <button type="submit" class="btn btn-primary">Cancel</button>
+                                <button type="submit" class="btn btn-warning">Submit</button>
+                              </div>
+                              
+                            </div>
+                           
+                            
+                          </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>   
+    </div>
+      <!--<div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3>Bar Series</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="chart1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3>Multiple Bar Series</h3>
+                    </div>
+                    <div id="chart2" class="panel-body">
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>-->
+</div>
+  
+
+
+
+<!--<footer class="container-fluid text-center">
+  <p></p>
+</footer>-->
+
+</body>
+</html>
