@@ -51,7 +51,7 @@ overflow: auto;
 display: block;
 }
   </style>
-  <script type="text/javascript">
+  <!--<script type="text/javascript">
     jQuery(function ($) {
         var data1 = [60,40];
        
@@ -74,7 +74,35 @@ display: block;
 
         
     });
-</script>
+</script>-->
+
+<script type="text/javascript">
+  window.onload = function () {
+  
+  var chart = new CanvasJS.Chart("chartContainer", {
+    theme: "light1", // "light2", "dark1", "dark2"
+    animationEnabled: false, // change to true		
+    title:{
+      text: "Basic Column Chart"
+    },
+    data: [
+    {
+      // Change type to "bar", "area", "spline", "pie",etc.
+      type: "column",
+      dataPoints: [
+        { label: "apple",  y: 10  },
+        { label: "orange", y: 15  },
+        { label: "banana", y: 25  },
+        { label: "mango",  y: 30  },
+        { label: "grape",  y: 28  }
+      ]
+    }
+    ]
+  });
+  chart.render();
+  
+  }
+  </script>
 </head>
 <body>
 
@@ -197,7 +225,7 @@ display: block;
                       
                       <div class="tab-content">
                         <div id="home" class="tab-pane fade in active">
-                          <form style="padding-top: 20px;">
+                          <form style="padding: 20px 0 20px 0;">
                             <label class="radio-inline">
                               <input type="radio" name="optradio" checked>All
                             </label>
@@ -214,7 +242,9 @@ display: block;
                               <input type="radio" name="optradio">Yearly
                             </label>
                           </form>
-                          <div id="chart1" style="padding-top: 30px;"></div>
+                          <!--<div id="chart1" style="padding-top: 30px;"></div>-->
+                          <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
                         </div>
                         <div id="menu1" class="tab-pane fade">
                           <h3>Menu 1</h3>
