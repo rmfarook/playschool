@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registration Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+ 
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      
+    }
+
+    
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+
+   /* .btn {
+      background-color: lightgray; /* For browsers that do not support gradients 
+  background-image: linear-gradient(to top, lightgray, white); /* Standard syntax (must be last) 
+  font-weight: bold;
+  font-size: 15px;
+} */
+  </style>
+  
+
+
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse" style="background-color: white;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"><img src="img/logo_sm.jpg" height="50" width="50" alt="logo_sm" style="margin: -14px;"></a>
+      </div>
+      <ul class="nav navbar-nav" style="float: right;">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="registration.html">Admission</a></li>
+        <li><a href="#">Departments</a></li>
+        <li class="" style="font-weight: bold;color: black; border-bottom:4px solid orange;"><a href="#">Payments</a></li>
+        <li><a href="#">Staff</a></li>
+        <li><a href="#">Students</a></li>
+        <li><a href="#">Reports</a></li>
+        <li style="background-color: orange;"><a href="#"><span class="glyphicon glyphicon-user" style="color: white;"></span> </a></li>
+      </ul>
+      <!--<ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+         </ul> -->
+    </div>
+  </nav>
+
+<div class="jumbotron">
+     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                      <b>PAYMENTS</b>       
+                    </div>
+                    
+                    <div id="divider"><hr></div>
+                    <div class="container">
+                      <form class="form-inline col-md-9" action="#">
+                        <div class="form-group">
+                          <label for="std_name">Enter Id / Name:</label>
+                          <input type="text" class="form-control" id="std_name" placeholder="Enter Id, Name.." size="50">
+                        </div>
+                            <button type="submit" class="btn" style="background-image: linear-gradient( lightgray, white);border-style: solid;">Search</button>
+                      </form>
+                    </div>
+                      
+
+                    <div id="divider"><hr></div>
+                    <div class="panel-body">
+                        <p class="font-weight-light" style="margin-left: 17px;color: orange;">Payments Details</p>
+                        <div class="col-md-5">
+                          <div class="panel-body" style="background-color: lightgray; height:350px;border-radius:10px">
+                            <form style="text-align: left;">
+                              <div class="form-row">
+                                <div class="form-group col-md-12">
+                                  <label for="inputEmail4">Admission No.</label>
+                                  <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                               
+                              </div>
+  
+                              <div class="form-row">
+                                <div class="form-group col-md-12">
+                                  <label for="inputEmail4"> Student Name</label>
+                                  <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                
+                              </div>
+  
+                              <div class="form-row">
+                                <div class="form-group col-md-12">
+                                  <label for="inputEmail4">Standard</label>
+                                  <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                
+                              </div>
+  
+                              <div class="form-row">
+                                <div class="form-group col-md-12">
+                                  <label for="inputEmail4">Payment Mode</label>
+                                  <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                
+                              </div></form>
+                           </div>
+                           <div class="panel-body"></div>
+                           <div class="panel-body"></div>
+                           <!-- Payment Accepting Section -->
+                        </div>
+                        <div class="col-md-7">
+                          <div class="panel-body" style="border-style:solid;border-color: #f2f2f2;border-radius:10px;height:350px;">
+                            <form>
+                              <div class="form-group col-md-12">
+                                
+                                <label class="radio-inline">
+                                  <input type="radio" name="optradio">Cash
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" name="optradio">Online
+                                </label>
+                              </div>
+  
+                              <div class="form-row">
+                                <div class="form-group col-md-12">
+                                  <button type="button" class="btn btn-warning">Net Banking</button>
+                                  <button type="button" class="btn btn-danger">Credit card</button>
+                                  <button type="button" class="btn btn-primary">Debit Card</button>
+                                  <button type="button" class="btn btn-success">GPay</button>
+                                  <button type="button" class="btn btn-info">Paytm</button>
+                                  </div>                                
+                              </div>
+
+                              
+                              <div class="form-row">
+                                <div class="form-group col-md-7">
+                                  <label for="inputEmail4">Amount</label>
+                                  <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                
+                              </div>
+  
+                              <div class="form-row">
+                                <div class="form-group col-md-7">
+                                  <label for="inputEmail4">Transaction Id / Receipt No.</label>
+                                  <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <button type="submit" class="btn btn-primary" style="background-color: darkslategray;"><b>Cancel</b></button>
+                                  <button type="submit" class="btn btn-warning"><b>Submit</b></button>
+                                </div>
+                                
+                              </div>
+                            
+                            </form>
+                           </div>
+                           
+                           <div class="panel-body"></div>
+                           <div class="panel-body"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>   
+    </div>
+      <!--<div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3>Bar Series</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="chart1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3>Multiple Bar Series</h3>
+                    </div>
+                    <div id="chart2" class="panel-body">
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>-->
+</div>
+  
+
+
+
+<!--<footer class="container-fluid text-center">
+  <p></p>
+</footer>-->
+
+</body>
+</html>
