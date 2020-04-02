@@ -50,6 +50,12 @@ overflow: auto;
 .table-wrapper-scroll-y {
 display: block;
 }
+
+.menu_active {
+  font-weight: bold;
+  color: black; 
+  border-bottom:4px solid orange;
+}
   </style>
   <!--<script type="text/javascript">
     jQuery(function ($) {
@@ -107,10 +113,16 @@ display: block;
   <nav class="navbar navbar-inverse" style="background-color: white;">
     <div class="container-fluid">
       <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="color: red;">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
         <a class="navbar-brand" href="#"><img src="img/logo_sm.jpg" height="50" width="50" alt="logo_sm" style="margin: -14px;"></a>
       </div>
-      <ul class="nav navbar-nav" style="float: right;">
-        <li class="" style="font-weight: bold;color: black; border-bottom:4px solid orange;"><a href="home.html">Home</a></li>
+      <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="menu_active" ><a href="home.html">Home</a></li>
         <li><a href="admission.html">Admission</a></li>
         <li><a href="#">Departments</a></li>
         <li><a href="payment.html">Payments</a></li>
@@ -119,10 +131,8 @@ display: block;
         <li><a href="#">Reports</a></li>
         <li style="background-color: orange;"><a href="#"><span class="glyphicon glyphicon-user" style="color: white;"></span> </a></li>
       </ul>
-      <!--<ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Login</a></li>
-         </ul> -->
-    </div>
+    </div></div>
+         
   </nav>
 
 <div class="jumbotron">
