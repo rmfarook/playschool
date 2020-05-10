@@ -56,6 +56,47 @@ display: block;
   color: black; 
   border-bottom:4px solid orange;
 }
+
+.credit-card {
+  width: 63px;
+  height: 48px;
+  object-fit: contain;
+  opacity: 0.5;
+}
+
+.Group-4 {
+  width: 70px;
+  height: 56px;
+  object-fit: contain;
+  opacity: 0.55;
+}
+
+.mortarboard {
+  width: 60px;
+  height: 50px;
+  object-fit: contain;
+  opacity: 0.52;
+}
+
+.writing {
+  width: 46px;
+  height: 51px;
+  object-fit: contain;
+  opacity: 0.51;
+}
+
+.Group-2 {
+  width: 180px;
+  height: 53px;
+  object-fit: contain;
+}
+
+.Header-Bar {
+  width: 1349px;
+  height: 70px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+}
   </style>
   <!--<script type="text/javascript">
     jQuery(function ($) {
@@ -110,7 +151,7 @@ display: block;
 </head>
 <body>
 
-  <nav class="navbar navbar-inverse" style="background-color: white;">
+  <nav class="navbar navbar-inverse Header-Bar">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="color: red;">
@@ -118,7 +159,10 @@ display: block;
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
-        <a class="navbar-brand" href="#"><img src="img/logo_sm.jpg" height="50" width="50" alt="logo_sm" style="margin: -14px;"></a>
+        <a class="navbar-brand" href="#"><img src="img/group-2.png"
+          srcset="img/group-2@2x.jpg 2x,
+                  img/group-2@3x.jpg 3x"
+          class="Group-2"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -149,8 +193,8 @@ display: block;
                           Income
                         </div>
                         <div style="float: right;">
-                            <span class="glyphicon glyphicon-briefcase" style="font-size: 50px;color: orange;"></span>
-                          </div>
+              <img src="img/credit-card.png" srcset="img/credit-card@2x.png 2x,img/credit-card@3x.png 3x"
+     class="credit-card">  </div>
                     
                     </div>
                 </div>
@@ -166,9 +210,11 @@ display: block;
                             Students
                           </div>
                           <div style="float: right;">
-                              <span class="glyphicon glyphicon-user" style="font-size: 50px;color: orange;"></span>
-                              <span class="glyphicon glyphicon-user" style="font-size: 50px;color: orange;"></span>
-                            </div>
+                            <img src="img/group-4.png"
+                            srcset="img/group-4@2x.png 2x,
+                                    img/group-4@3x.png 3x"
+                            class="Group-4">
+                          </div>
                       
                       </div>
                 </div>
@@ -185,8 +231,12 @@ display: block;
                             Total Staffs
                           </div>
                           <div style="float: right;">
-                              <span class="glyphicon glyphicon-education" style="font-size: 50px;color: orange;"></span>
-                            </div>
+                            <img src="img/mortarboard.png"
+                            srcset="img/mortarboard@2x.png 2x,
+                                    img/mortarboard@3x.png 3x"
+                            class="mortarboard">                          
+                          
+                          </div>
                       
                       </div>
                 </div>
@@ -204,8 +254,11 @@ display: block;
                             Reports
                           </div>
                           <div style="float: right;">
-                              <span class="glyphicon glyphicon-edit" style="font-size: 50px;color: orange;"></span>
-                            </div>
+                            <img src="img/writing.png"
+                            srcset="img/writing@2x.png 2x,
+                                    img/writing@3x.png 3x"
+                            class="writing">
+                          </div>
                       
                       </div>
                 </div>
@@ -225,12 +278,58 @@ display: block;
             <div class="panel-group">
                 <div class="panel panel-default">
                   <div class="panel-body">
-                    <ul class="nav nav-tabs">
-                        <li class="active" style="font-weight: bold; background-color: cornsilk;"><a data-toggle="tab" href="#home">PLAYSCHOOL</a></li>
-                        <li><a data-toggle="tab" href="#menu11">TUTION DETAILS</a></li>
-                        
+                    <div class="btn-group">
+
+                    <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials
+                      <span class="caret"></span></button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
                       </ul>
-                      
+                    </div>
+
+                    <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials
+                      <span class="caret"></span></button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials
+                      <span class="caret"></span></button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials
+                      <span class="caret"></span></button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+                      </ul>
+                    </div>
+                    </div>
+
+                    
                       <div class="tab-content">
                         <div id="home" class="tab-pane fade in active">
                           <form style="padding: 20px 0 20px 0;">
